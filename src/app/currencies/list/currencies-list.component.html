@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h1 align="center">
+      {{ title }}
+    </h1>
+</div>
+<div class="row">
+    <div *ngFor='let currencie of currenciesList' class="col-md-5 offset-md-1 col-sm-12">
+        <app-currencies-item [currencie]='currencie'></app-currencies-item>
+    </div>
+</div>
